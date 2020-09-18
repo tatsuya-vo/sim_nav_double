@@ -23,12 +23,12 @@
   </group>
 
   <!-- BEGIN ROBOT 3-->
-  <group ns="robot3">
+  <!-- <group ns="robot3">
     <param name="tf_prefix" value="robot3_tf" />
     <include file="$(find double_turtlebot3s_sim)/launch/one_robot.launch" >
       <arg name="init_pose" value="-x 2 -y -0.5 -z 0" />
       <arg name="robot_name"  value="Robot3" />
     </include>
-  </group>
+  </group> -->
 
 </launch>
