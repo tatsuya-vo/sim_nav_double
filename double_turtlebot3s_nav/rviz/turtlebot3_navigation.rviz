@@ -7,9 +7,6 @@ Panels:
         - /Global Options1
         - /TF1/Frames1
         - /TF1/Tree1
-        - /Local Map1
-        - /Local Map1/Polygon1
-        - /Local Map1/Polygon2
       Splitter Ratio: 0.5
     Tree Height: 425
   - Class: rviz/Selection
@@ -187,22 +184,6 @@ Visualization Manager:
       Update Interval: 0
       Value: true
       Visual Enabled: true
-    - Alpha: 1
-      Class: rviz/RobotModel
-      Collision Enabled: false
-      Enabled: false
-      Links:
-        All Links Enabled: true
-        Expand Joint Details: false
-        Expand Link Details: false
-        Expand Tree: false
-        Link Tree Style: Links in Alphabetic Order
-      Name: RobotModel
-      Robot Description: robot_description
-      TF Prefix: robot3_tf
-      Update Interval: 0
-      Value: false
-      Visual Enabled: true
     - Class: rviz/TF
       Enabled: false
       Frame Timeout: 15
@@ -277,36 +258,6 @@ Visualization Manager:
       Use Fixed Frame: true
       Use rainbow: true
       Value: true
-    - Alpha: 1
-      Autocompute Intensity Bounds: true
-      Autocompute Value Bounds:
-        Max Value: 10
-        Min Value: -10
-        Value: true
-      Axis: Z
-      Channel Name: intensity
-      Class: rviz/LaserScan
-      Color: 0; 255; 0
-      Color Transformer: FlatColor
-      Decay Time: 0
-      Enabled: true
-      Invert Rainbow: false
-      Max Color: 255; 255; 255
-      Max Intensity: 13069
-      Min Color: 0; 0; 0
-      Min Intensity: 28
-      Name: LaserScan
-      Position Transformer: XYZ
-      Queue Size: 10
-      Selectable: true
-      Size (Pixels): 3
-      Size (m): 0.0300000012
-      Style: Flat Squares
-      Topic: /robot3/scan
-      Unreliable: false
-      Use Fixed Frame: true
-      Use rainbow: true
-      Value: true
     - Class: rviz/Image
       Enabled: false
       Image Topic: /raspicam_node/image
@@ -375,29 +326,6 @@ Visualization Manager:
       Topic: /move_base2/NavfnROS/plan
       Unreliable: false
       Value: true
-    - Alpha: 1
-      Buffer Length: 1
-      Class: rviz/Path
-      Color: 0; 0; 0
-      Enabled: true
-      Head Diameter: 0.300000012
-      Head Length: 0.200000003
-      Length: 0.300000012
-      Line Style: Lines
-      Line Width: 0.0299999993
-      Name: Planner Plan
-      Offset:
-        X: 0
-        Y: 0
-        Z: 0
-      Pose Color: 255; 85; 255
-      Pose Style: None
-      Radius: 0.0299999993
-      Shaft Diameter: 0.100000001
-      Shaft Length: 0.100000001
-      Topic: /move_base3/NavfnROS/plan
-      Unreliable: false
-      Value: true
     - Class: rviz/Group
       Displays:
         - Alpha: 0.699999988
@@ -417,16 +345,6 @@ Visualization Manager:
           Enabled: true
           Name: Costmap
           Topic: /move_base2/global_costmap/costmap
-          Unreliable: false
-          Use Timestamp: false
-          Value: true
-        - Alpha: 0.699999988
-          Class: rviz/Map
-          Color Scheme: costmap
-          Draw Behind: true
-          Enabled: true
-          Name: Costmap
-          Topic: /move_base3/global_costmap/costmap
           Unreliable: false
           Use Timestamp: false
           Value: true
@@ -476,29 +394,6 @@ Visualization Manager:
           Topic: /move_base2/DWAPlannerROS/global_plan
           Unreliable: false
           Value: true
-        - Alpha: 1
-          Buffer Length: 1
-          Class: rviz/Path
-          Color: 255; 0; 0
-          Enabled: true
-          Head Diameter: 0.300000012
-          Head Length: 0.200000003
-          Length: 0.300000012
-          Line Style: Lines
-          Line Width: 0.0299999993
-          Name: Planner
-          Offset:
-            X: 0
-            Y: 0
-            Z: 0
-          Pose Color: 255; 85; 255
-          Pose Style: None
-          Radius: 0.0299999993
-          Shaft Diameter: 0.100000001
-          Shaft Length: 0.100000001
-          Topic: /move_base3/DWAPlannerROS/global_plan
-          Unreliable: false
-          Value: true
       Enabled: true
       Name: Global Map
     - Class: rviz/Group
@@ -517,14 +412,6 @@ Visualization Manager:
           Enabled: true
           Name: Polygon
           Topic: /move_base2/local_costmap/footprint
-          Unreliable: false
-          Value: true
-        - Alpha: 1
-          Class: rviz/Polygon
-          Color: 0; 0; 0
-          Enabled: true
-          Name: Polygon
-          Topic: /move_base3/local_costmap/footprint
           Unreliable: false
           Value: true
         - Alpha: 0.699999988
@@ -547,16 +434,6 @@ Visualization Manager:
           Unreliable: false
           Use Timestamp: false
           Value: true
-        - Alpha: 0.699999988
-          Class: rviz/Map
-          Color Scheme: costmap
-          Draw Behind: false
-          Enabled: false
-          Name: Costmap
-          Topic: /move_base3/local_costmap/costmap
-          Unreliable: false
-          Use Timestamp: false
-          Value: false
         - Alpha: 1
           Buffer Length: 1
           Class: rviz/Path
@@ -603,29 +480,6 @@ Visualization Manager:
           Topic: /move_base2/DWAPlannerROS/local_plan
           Unreliable: false
           Value: true
-        - Alpha: 1
-          Buffer Length: 1
-          Class: rviz/Path
-          Color: 255; 255; 0
-          Enabled: false
-          Head Diameter: 0.300000012
-          Head Length: 0.200000003
-          Length: 0.300000012
-          Line Style: Lines
-          Line Width: 0.0299999993
-          Name: Planner
-          Offset:
-            X: 0
-            Y: 0
-            Z: 0
-          Pose Color: 255; 85; 255
-          Pose Style: None
-          Radius: 0.0299999993
-          Shaft Diameter: 0.100000001
-          Shaft Length: 0.100000001
-          Topic: /move_base3/DWAPlannerROS/local_plan
-          Unreliable: false
-          Value: false
       Enabled: true
       Name: Local Map
     - Alpha: 1
@@ -661,22 +515,6 @@ Visualization Manager:
       Unreliable: false
       Value: true
     - Alpha: 1
-      Arrow Length: 0.0500000007
-      Axes Length: 0.300000012
-      Axes Radius: 0.00999999978
-      Class: rviz/PoseArray
-      Color: 255; 0; 0
-      Enabled: false
-      Head Length: 0.0700000003
-      Head Radius: 0.0299999993
-      Name: Amcl Particles
-      Shaft Length: 0.230000004
-      Shaft Radius: 0.00999999978
-      Shape: Arrow (Flat)
-      Topic: /robot3/particlecloud
-      Unreliable: false
-      Value: false
-    - Alpha: 1
       Axes Length: 1
       Axes Radius: 0.100000001
       Class: rviz/Pose
@@ -706,21 +544,6 @@ Visualization Manager:
       Topic: /move_base2/current_goal
       Unreliable: false
       Value: true
-    - Alpha: 1
-      Axes Length: 1
-      Axes Radius: 0.100000001
-      Class: rviz/Pose
-      Color: 255; 25; 0
-      Enabled: false
-      Head Length: 0.300000012
-      Head Radius: 0.100000001
-      Name: Goal
-      Shaft Length: 0.5
-      Shaft Radius: 0.0500000007
-      Shape: Arrow
-      Topic: /move_base3/current_goal
-      Unreliable: false
-      Value: false
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
