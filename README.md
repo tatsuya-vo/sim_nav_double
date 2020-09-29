@@ -7,11 +7,11 @@ I make it by following this video https://www.youtube.com/watch?v=iyL_hsqjKWI.
 
 1. Run roscore:
 
-        `$ roscore`
+        $ roscore
 2. Run simulations:
 
-        `$ roslaunch double_turtlebot3s_sim main.launch`
+        $ roslaunch double_turtlebot3s_sim main.launch
 3. Run navigation:
 
-        `$ roslaunch double_turtlebot3s_nav navigation.launch`
+        $ roslaunch double_turtlebot3s_nav navigation.launch
 4. Send goal via topic 2D Nav Goal on Tool Properties.
